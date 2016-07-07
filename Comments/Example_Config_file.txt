@@ -1,0 +1,10 @@
+File name : vector.c
+Comment length : 60
+Start comment symbol : /*
+End comment symbol : */
+
+Index : 15
+Comment : Test 1
+
+Index : 25
+Comment : Test 2
