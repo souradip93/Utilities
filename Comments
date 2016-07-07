@@ -10,7 +10,7 @@ if('-help' in arguments):
   print("You need to pass the path of config file while executing.")
   print("Following options are available in config file.")
   print('''	1) File name - Specifies the path to your input file.
-				Ex - File name : config.txt''')
+				Ex - File name : vector.c''')
   print('''	2) Index - Specifies the line number where you want to add comment.
 				Ex - Index : 15''')
   print('''	3) Comment - Specifies the comment you want to add.
