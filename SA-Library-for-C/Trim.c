@@ -38,7 +38,7 @@ void sa_trim_constant(char * out, char * str, char d){
     out[end-start+1] = 0;
 }
 
-int main() {
+void main() {
      
     char str[14] = " Souradip    ";
     char * str1 = SA_TRIM(str, 's');
@@ -50,5 +50,4 @@ int main() {
     printf("<%s>",str3);
     *str3 = 'I';
     printf("<%s>",str3);
-	return 0;
 }
