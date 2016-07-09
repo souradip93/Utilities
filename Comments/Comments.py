@@ -34,7 +34,7 @@ if('-help' in arguments):
   print("You need to pass the path of config file while executing.")
   print("Following options are available in config file.")
   print('''	1) File name - Specifies the path to your input file.
-				Ex - File name : vector.c''')
+				Ex - File name : config.txt''')
   print('''	2) Index - Specifies the line number where you want to add comment.
 				Ex - Index : 15''')
   print('''	3) Comment - Specifies the comment you want to add.
@@ -98,7 +98,10 @@ for key,value in enumerate(parts):
     value.append("#"*COMMENT_LENGTH)
     value.append(end_comment_sign)
 
-test_file_list = parts[0] + parts[1] + parts[2]
+test_file_list = []
+for each in parts:
+    test_file_list = test_file_list + each;
+
 output_file = open(my_file_dict['file name'][0]+".commented", 'w')
 for line in test_file_list:
   output_file.write(line+'\n');
